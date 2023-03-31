@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="preload"
+      href="https://fonts.gstatic.com/s/qwigley/v10/1cXzeeD_sGZwsa3_K4kp40-1bbpktyg2ILnDn9YfXG81brjvrt8z.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link rel="stylesheet" href="/assets/css/styles.css" />
+    <link rel="stylesheet" href="/assets/css/collection.css" />
+    <style>
+      .image-popup {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.8);
+        z-index: 1000;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .image-popup img {
+        max-width: 90%;
+        max-height: 90%;
+        object-fit: contain;
+      }
+
+      .image-popup:target {
+        display: flex;
+      }
+    </style>
+    <title>Mom's Pottery Studio</title>
+  </head>
+  <body>
+    <div class="navbar-container">
+      <div class="navbar-wrapper">
+        <header>
+          <h1><a href="#home">Mom's Pottery Studio</a></h1>
+        </header>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="collection.html">Collection</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <main>
+      <section id="collection" class="section">
+        <h2>Collection</h2>
+        <div class="gallery">
+          <a href="#plate1-popup">
+            <img
+              src="/assets/images/plate1.jpg"
+              alt="Pottery piece 1"
+              id="plate1"
+            />
+          </a>
+          <a href="#plate2-popup">
+            <img
+              src="/assets/images/plate2.jpg"
+              alt="Pottery piece 2"
+              id="plate2"
+            />
+          </a>
+          <a href="#plate5-popup">
+            <img
+              src="/assets/images/plate5.jpg"
+              alt="Pottery piece 5"
+              id="plate5"
+            />
+          </a>
+          <a href="#plate6-popup">
+            <img
+              src="/assets/images/plate6.jpg"
+              alt="Pottery piece 6"
+              id="plate6"
+            />
+          </a>
+          <a href="#plate7-popup">
+            <img
+              src="/assets/images/plate7.jpg"
+              alt="Pottery piece 7"
+              id="plate7"
+            />
+          </a>
+          <a href="#plate8-popup">
+            <img
+              src="/assets/images/plate8.jpg"
+              alt="Pottery piece 8"
+              id="plate8"
+            />
+          </a>
+          <a href="#plate1-popup">
+            <img
+              src="/assets/images/plate1.jpg"
+              alt="Pottery piece 1"
+              id="plate1"
+            />
+          </a>
+          <a href="#plate2-popup">
+            <img
+              src="/assets/images/plate2.jpg"
+              alt="Pottery piece 2"
+              id="plate2"
+            />
+          </a>
+          <a href="#plate5-popup">
+            <img
+              src="/assets/images/plate5.jpg"
+              alt="Pottery piece 5"
+              id="plate5"
+            />
+          </a>
+          <a href="#plate6-popup">
+            <img
+              src="/assets/images/plate6.jpg"
+              alt="Pottery piece 6"
+              id="plate6"
+            />
+          </a>
+          <a href="#plate7-popup">
+            <img
+              src="/assets/images/plate7.jpg"
+              alt="Pottery piece 7"
+              id="plate7"
+            />
+          </a>
+          <a href="#plate8-popup">
+            <img
+              src="/assets/images/plate8.jpg"
+              alt="Pottery piece 8"
+              id="plate8"
+            />
+          </a>
+          <!-- Add more images as needed -->
+        </div>
+      </section>
+    </main>
+    <div class="contact-footer-container">
+      <section id="contact" class="section">
+        <h2>Contact</h2>
+        <p>For inquiries or custom orders, please email veerletje@msn.com.</p>
+      </section>
+    </div>
+    <footer class="section">
+      <p>&copy; 2023 Mom's Pottery Studio. All rights reserved.</p>
+    </footer>
+
+    <!-- Image popups -->
+    <div class="image-popup" id="plate1-popup">
+      <div class="image-popup-inner">
+        <a href="#_"
+          ><img src="/assets/images/plate1.jpg" alt="Pottery piece 1"
+        /></a>
+      </div>
+    </div>
+    <div class="image-popup" id="plate2-popup">
+      <div class="image-popup-inner">
+        <a href="#_"
+          ><img src="/assets/images/plate2.jpg" alt="Pottery piece 2"
+        /></a>
+      </div>
+    </div>
+    <div class="image-popup" id="plate5-popup">
+      <div class="image-popup-inner">
+        <a href="#_"
+          ><img src="/assets/images/plate5.jpg" alt="Pottery piece 5"
+        /></a>
+      </div>
+    </div>
+    <div class="image-popup" id="plate6-popup">
+      <div class="image-popup-inner">
+        <a href="#_"
+          ><img src="/assets/images/plate6.jpg" alt="Pottery piece 6"
+        /></a>
+      </div>
+    </div>
+    <div class="image-popup" id="plate7-popup">
+      <div class="image-popup-inner">
+        <a href="#_"
+          ><img src="/assets/images/plate7.jpg" alt="Pottery piece 7"
+        /></a>
+      </div>
+    </div>
+    <div class="image-popup" id="plate8-popup">
+      <div class="image-popup-inner">
+        <a href="#_"
+          ><img src="/assets/images/plate8.jpg" alt="Pottery piece 8"
+        /></a>
+      </div>
+    </div>
+  </body>
+</html>

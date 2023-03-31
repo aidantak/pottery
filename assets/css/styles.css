@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300&family=Dangrek&family=Montserrat:ital@0;1&family=Qwigley&display=swap&family=Roboto:wght@300&display=swap');
 
 body {
-  background-image: url("/assets/images/potterhands.jpg");
+  background-color: bisque;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -68,6 +68,19 @@ nav a:hover {
   color: grey
 }
 
+.explore-link {
+  color: #fff;
+  text-decoration: none;
+  background-color: rgb(217, 132, 121);
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+}
+
+.explore-link:visited {
+  color: #fff;
+}
+
+
 header a {
   color: white;
   text-decoration: none;
@@ -94,7 +107,7 @@ header a:visited {
 .contact-footer-container {
   background-color: rgba(255, 255, 255, 0.3);
   border-radius: 10px;
-  padding: 50px;
+  padding: 20px;
   margin-top: 2rem;
 }
 
@@ -106,4 +119,15 @@ header a:visited {
 .text-container {
   width: 50%;
   margin-left: 2rem;
+}
+
+#bear {
+  margin-top: 1rem;
+  width: 100%;
+  text-align: center;
+}
+
+#bear img {
+  max-width: 75%; /* Adjust this value to control the size of the image */
+  height: auto;
 }
