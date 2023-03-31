@@ -1,0 +1,8 @@
+#hike {
+  float: left;
+  margin-right: 1rem; /* Add a margin to separate the image from the text */
+}
+
+#hike img {
+  width: 500px; /* Adjust the width to your liking */
+}
