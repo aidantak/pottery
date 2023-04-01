@@ -1,18 +1,20 @@
-@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300&family=Dangrek&family=Montserrat:ital@0;1&family=Qwigley&display=swap&family=Roboto:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@300&family=Dangrek&family=Montserrat:ital@0;1&family=Qwigley&display=swap&family=Roboto:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
 
 body {
-  background-color: bisque;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  min-height: 100vh;
-  font-family: Arial, sans-serif;
+  /*background-color: #FBAB7E;
+  background-image: linear-gradient(116deg, #FBAB7E 0%, #F7CE68 100%);*/
+  /*background: #34e89e;
+  background: -webkit-linear-gradient(to left, #0f3443, #34e89e);
+  background: linear-gradient(to left, #0f3443, #34e89e);*/
+  background: #f1ffef;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
   line-height: 1.6;
 }
 
-
 header {
-  font-family: 'Qwigley', cursive;
+  font-family: "Qwigley", cursive;
   font-size: 2rem;
   color: white;
   margin-left: 1rem;
@@ -22,19 +24,29 @@ header {
 .navbar-container {
   position: relative; /* Added */
   width: 100%;
-  margin-top: 0.5rem;
+  box-sizing: border-box;
 }
 
 .navbar-container::before {
   content: "";
   position: absolute;
+  width: 100%;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.5);
-  z-index: -1;
-  border-radius: 10px;
+  background: #093028; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to left,
+    #237a57,
+    #093028
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to left,
+    #237a57,
+    #093028
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  z-index: -5;
 }
 
 .navbar-wrapper {
@@ -47,31 +59,20 @@ header {
   box-sizing: border-box;
 }
 
-
-nav ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-}
-
-nav li {
-  margin-left: 1rem;
-}
-
-nav a {
-  color: #fff;
-  text-decoration: none;
-}
-
-nav a:hover {
-  color: grey
-}
-
 .explore-link {
   color: #fff;
   text-decoration: none;
-  background-color: rgb(217, 132, 121);
+  background: #093028; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to left,
+    #237a57,
+    #093028
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to left,
+    #237a57,
+    #093028
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   padding: 0.5rem 1rem;
   border-radius: 5px;
 }
@@ -79,7 +80,6 @@ nav a:hover {
 .explore-link:visited {
   color: #fff;
 }
-
 
 header a {
   color: white;
@@ -95,7 +95,6 @@ header a:visited {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background-color: rgba(255, 255, 255, 0.3);
   margin-top: 2rem;
   border-radius: 10px;
 }
@@ -105,10 +104,19 @@ header a:visited {
 }
 
 .contact-footer-container {
-  background-color: rgba(255, 255, 255, 0.3);
-  border-radius: 10px;
   padding: 20px;
   margin-top: 2rem;
+  background: #093028; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to left,
+    #237a57,
+    #093028
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to left,
+    #237a57,
+    #093028
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .content-container {
@@ -130,4 +138,36 @@ header a:visited {
 #bear img {
   max-width: 75%; /* Adjust this value to control the size of the image */
   height: auto;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.social-icons li {
+  list-style: none;
+  margin-right: 10px;
+}
+
+.social-icons li:last-child {
+  margin-right: 0;
+}
+
+.social-icons a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #f8f8f8;
+  color: #000;
+  transition: background-color 0.3s ease;
+}
+
+.social-icons a:hover {
+  background-color: grey;
+  color: black;
 }
